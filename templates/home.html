@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>image prediction</title>
+</head>
+<body style="font-size:1.5rem">
+    <div style="min-height:100vh; padding:2rem; display:flex; flex-direction: column;">
+    <div style = "flex-grow:1">
+    <div class="example3">
+    <center><h2>Image predictions</h2></center>
+    
+    <form class="example3" action="imageupload/imageprocess" method="POST" enctype="multipart/form-data">
+        <div class="example"><label for="image"><div class="example2"><span>choose image</span></div></label><input id="image" style= "display:none" type="file" name="image"/></div>
+        <div class="example"><button class="example2" type="submit"><span>submit</span></button></div>
+        </form>      
+    </div>   
+    </div>
+    <div class="example3"><hr style = "width: 100%;">
+        <div class="example"><a href="https://github.com/arjunprakash027">Github</a><a href="https://www.linkedin.com/in/arjun-prakash-589348211/">Linkdin</a></div>
+    </div>
+    </div>     
+</body>
+
+<style>
+    body{
+        background-color:#1d0016;
+        color:#FCCEF1;
+        padding:0;
+        margin:0;
+    }
+    .example{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .example2{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        background-color:#FCCEF1;
+        color:#33252F;
+        border-radius: 1rem;
+        transition: all 500ms ease;
+     }
+    .example2:hover{
+        transform: scale(1.1)
+    }
+    .example3{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .example3 > * + *{
+        margin-top:2rem
+    }
+    .example > * + *{
+        margin-left:2rem
+    }
+</style>
+</html>

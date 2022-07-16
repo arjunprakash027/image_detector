@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>predictions</title>
+</head>
+<body>
+
+<div class="example3">
+<h1>Predictions</h1>
+<div class="example4">
+
+{% for r,p in res %}
+<div class="example2">
+    <div class="example"><span>prediction:</span><b>{{r}}</b></div>
+    <div class="example"><span>accuracy:</span><b>{{p}}%</b></div>
+</div>
+{% endfor %}
+</div>
+</div>
+<style>
+    body{
+        background-color:#1d0016;
+        color:#FCCEF1;
+    }
+
+    .example3{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .example3 > * + *{
+        margin-top:2rem
+
+    }
+    .example > * + *{
+        margin-left:2rem}
+
+    .example{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .example2{
+        display:flex;
+        flex-direction: column;
+    }
+    .example2 > * + *{
+        margin-top:0.5rem
+    }
+
+    .example4{
+        display:flex;
+        flex-direction: column;
+    }
+    .example4 > * + *{
+        margin-top:2rem
+    }
+
+</style>
+    
+    
+    
+</body>
+</html>
